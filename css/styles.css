@@ -187,10 +187,6 @@ header {
   gap: 1rem;
 }
 
-.people-list a:hover p:first-child {
-  color: rgb(var(--primary));
-}
-
 .people-img {
   width: 6rem;
   height: 6rem;
@@ -198,14 +194,22 @@ header {
   flex-shrink: 0;
 }
 
-.people-meta p:first-child {
-  font-size: 0.875rem;
-  font-weight: 600;
-}
 .people-meta p:last-child {
   font-size: 0.75rem;
   line-height: 1.375;
-  color: rgb(75 85 99);
+  color: var(--text-subtle);
+}
+
+.people-list a:hover .people-link {
+  color: rgb(var(--primary));
+}
+
+.people-link {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap:.25rem;
 }
 
 .book-list {
@@ -247,13 +251,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: end;
-  height: 340px;
+  height: 400px;
 }
 
 .book-meta {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 240px;
   gap: 0.5rem;
 }
 
@@ -266,12 +270,18 @@ header {
 .book-meta p {
   font-size: 0.875rem;
   line-height: 1.25;
-  color: rgb(75 85 99);
+  color: var(--text-subtle);
+}
+
+.book-meta p:last-child {
+  font-size: .75rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .book-cover img {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  width: 200px;
+  width: 240px;
 }
 
 .book-cover img:hover {
@@ -282,8 +292,9 @@ header {
 
 .book-btns {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 0.5rem;
+  width: 240px;
 }
 
 .book-btns a {
@@ -324,7 +335,7 @@ header {
   font-size: 0.75rem;
   color: var(--text-subtle);
   text-align: left;
-  width: 200px;
+  width: 240px;
 }
 
 .testimonial-lg {
@@ -432,6 +443,19 @@ footer {
   background-color: var(--bg-primary-subtle);
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.footer-wrap {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrap {
+  text-decoration: none;
+  color: rgb(var(--text-body));
 }
 
 .footer-links {
