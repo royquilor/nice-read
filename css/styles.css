@@ -322,7 +322,7 @@ header {
   display: flex;
   justify-content: start;
   gap: 0.5rem;
-  width: 240px;
+  width: 256px;
 }
 
 .book-btns a {
@@ -331,14 +331,16 @@ header {
   flex-direction: column;
   text-decoration: none;
   font-weight: 600;
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
+  flex: 1 1 0%;
   background-color: var(--bg-primary);
   color: white;
   border-radius: 0.375rem;
   line-height: 1;
-  letter-spacing: -0.09px;
+  letter-spacing: -0.18px;
   padding: 0.5rem 0.75rem;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  text-align: center;
 }
 
 .book-btns a:hover {
