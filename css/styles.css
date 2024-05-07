@@ -201,6 +201,14 @@ header {
   color: var(--text-subtle);
 }
 
+.people-list a svg {
+  visibility: hidden;
+}
+
+.people-list a:hover svg {
+  visibility: visible;
+}
+
 .people-list a:hover .people-link {
   color: rgb(var(--primary));
 }
@@ -415,6 +423,11 @@ header {
   position: absolute;
   right: 2rem;
   top: 2rem;
+  visibility: hidden;
+}
+
+.tweet-user:hover svg {
+  visibility: visible;
 }
 
 .tweet-meta p:first-child {
