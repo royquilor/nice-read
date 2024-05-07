@@ -371,7 +371,7 @@ header {
 }
 
 .tweet-list {
-  background-color: var(--bg-subtle);
+  background-color: var(--bg-weak);
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 2px;
@@ -380,7 +380,7 @@ header {
   max-width: 1152px;
   margin: 0 auto;
   padding: 2px;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
