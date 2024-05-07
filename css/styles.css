@@ -1,6 +1,7 @@
 :root {
   --primary: 9 194 105;
   --text-body: #111827;
+  --text-secondary: #4B5563;
   --text-subtle: #6b7280;
   --bg-weak: #E7E5E4;
   --bg-subtle: #fafaf9;
@@ -296,7 +297,7 @@ header {
   font-size: var(--text-sm);
   letter-spacing: -0.09px;
   line-height: 1.25;
-  color: var(--text-subtle);
+  color: var(--text-secondary);
 }
 
 .book-meta p:last-child {
@@ -362,7 +363,7 @@ header {
 
 .book-recommended {
   font-size: var(--text-xs);
-  color: var(--text-subtle);
+  color: var(--text-secondary);
   text-align: left;
   width: 240px;
   font-weight: 500;
@@ -511,7 +512,7 @@ footer {
   max-width: 400px;
   margin: 0 auto;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: start;
   padding: 1.25rem;
 }
